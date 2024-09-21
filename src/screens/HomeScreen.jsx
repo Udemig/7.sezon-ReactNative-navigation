@@ -23,6 +23,12 @@ const HomeScreen = () => {
         onPress={() => navigation.navigate(SCREENS.Profile)}>
         <Text>Go to Profile Screen</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={{backgroundColor: 'lightgreen', padding: 10, borderRadius: 20}}
+        onPress={() => navigation.toggleDrawer()}>
+        <Text>Drawer Navigationa Git</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };

@@ -9,6 +9,7 @@ import NotificationsScreen from '../screens/NotificationsScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import CartScreen from '../screens/CartScreen';
+import BottomTabNavigation from './BottomTabNavigation';
 
 //util import
 import {SCREENS} from '../util/constant';
@@ -65,7 +66,7 @@ const NativeStackNavigation = () => {
         // headerBackTitle: 'Geri',
       }}
       initialRouteName={Home}>
-      <Stack.Screen name={Home} component={HomeScreen} />
+      <Stack.Screen name={Home} component={BottomTabNavigation} />
       <Stack.Screen
         name={Notifications}
         component={NotificationsScreen}
